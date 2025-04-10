@@ -1,0 +1,15 @@
+// package main
+
+// import (
+// 	"log"
+
+// 	"github.com/stellar/go/keypair"
+// )
+
+// func main() {
+// 	kp, _ := keypair.Random()
+// 	log.Println("Master Public Key:", kp.Address())
+// 	log.Println("Master Secret Key:", kp.Seed())
+//2025/04/10 12:33:12 Master Public Key: GBYPK74VIL5HJSQHELN3U2O3COOZILD3TNP4S64XZ32GAOC2XMSUMKNM
+// 2025/04/10 12:33:12 Master Secret Key: SDNT46HL2Y2GBBQJKLZGR4I6BBBYSEAIGZAVTZNJI3EDXHHKL52VZQND
+// }

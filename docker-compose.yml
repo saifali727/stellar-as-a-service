@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - STELLAR_NETWORK=testnet # Use testnet for development
+      - MASTER_SECRET_KEY=SDNT46HL2Y2GBBQJKLZGR4I6BBBYSEAIGZAVTZNJI3EDXHHKL52VZQND # Replace with your master account secret key
+      - STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org # Testnet Horizon URL
+      - GIN_MODE=release
+    # command: [ "./stellar-wallet-backend.sh" ] # Explicitly set to avoid overrides
